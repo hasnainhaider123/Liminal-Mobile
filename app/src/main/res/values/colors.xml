@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="app_black">#000000</color>
+    <color name="login_screen_background">#0E0E0E</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="liminal_white">#B0B0B0</color>
+    <color name="app_color">#001515</color>
+    <color name="history_color_gray">#7F7F7F</color>
+    <color name="sign_up_with_email">#2A2A2C</color>
+</resources>

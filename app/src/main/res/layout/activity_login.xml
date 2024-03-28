@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/login_screen_background"
+    tools:context=".activities.Login">
+
+    <include
+        android:id="@+id/includeLogin"
+        layout="@layout/simple_back_appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <EditText
+        android:id="@+id/enterEmail"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/black_background"
+
+        android:hint="@string/enter_email"
+        android:maxLines="1"
+        android:paddingStart="@dimen/_22sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingRight="@dimen/_32sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/history_color_gray"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/includeLogin" />
+
+
+    <EditText
+        android:id="@+id/enterPassword"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/black_background"
+        android:fontFamily="@font/montserrat_regular"
+        android:hint="@string/enter_password"
+        android:maxLines="1"
+        android:inputType="textPassword"
+        android:paddingStart="@dimen/_22sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingRight="@dimen/_32sdp"
+
+        android:paddingBottom="@dimen/_12sdp"
+        android:textColor="@color/white"
+        android:textColorHint="@color/history_color_gray"
+        android:textSize="@dimen/mediumTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmail" />
+
+    <TextView
+        android:id="@+id/forgot"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:paddingStart="@dimen/_8sdp"
+        android:paddingTop="@dimen/_4sdp"
+        android:paddingRight="@dimen/_8sdp"
+        android:paddingBottom="@dimen/_4sdp"
+        android:text="@string/forgot_password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/smallTextSize"
+        app:layout_constraintBottom_toBottomOf="@+id/enterPassword"
+        app:layout_constraintEnd_toEndOf="@+id/enterPassword"
+        app:layout_constraintTop_toTopOf="@+id/enterPassword" />
+
+    <CheckBox
+        android:id="@+id/remember"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:buttonTint="@color/white"
+        android:fontFamily="@font/montserrat_regular"
+        android:shadowColor="@color/white"
+        android:text="@string/remember_me"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterPassword" />
+
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/login_background"
+        android:fontFamily="@font/montserrat_semibold"
+        android:gravity="center"
+        android:paddingStart="@dimen/_22sdp"
+        android:paddingTop="@dimen/_12sdp"
+        android:paddingRight="@dimen/_32sdp"
+        android:paddingBottom="@dimen/_12sdp"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/normalTextSize"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
